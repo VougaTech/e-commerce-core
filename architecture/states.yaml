@@ -1,0 +1,8 @@
+states:
+  - entity: Order
+    initial: Created
+    states:
+      - Created
+      - Paid
+      - Shipped
+      - Cancelled

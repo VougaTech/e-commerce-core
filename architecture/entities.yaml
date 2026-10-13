@@ -1,0 +1,12 @@
+entities:
+  - name: Customer
+    attributes:
+      - id: string (uuid)
+      - email: string
+      - status: string
+  - name: Order
+    attributes:
+      - id: string (uuid)
+      - customer_id: string (uuid)
+      - total_amount: float
+      - status: string

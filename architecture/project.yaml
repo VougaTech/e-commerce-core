@@ -1,0 +1,4 @@
+name: "e-commerce-core"
+description: "Core architecture specification for a modular e-commerce backend."
+domain: "retail"
+version: "1.0.0"

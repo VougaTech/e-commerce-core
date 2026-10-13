@@ -1,0 +1,11 @@
+workflows:
+  - name: ProcessOrderFlow
+    trigger: OrderCreated
+    steps:
+      - step: 1
+        action: ValidateInventory
+      - step: 2
+        action: AwaitPayment
+        on_event: PaymentReceived
+      - step: 3
+        action: ShipOrder

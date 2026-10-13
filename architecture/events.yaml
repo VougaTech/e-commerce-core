@@ -1,0 +1,12 @@
+events:
+  - name: OrderCreated
+    source: Order
+    payload:
+      - order_id
+      - customer_id
+      - amount
+  - name: PaymentReceived
+    source: Customer
+    payload:
+      - order_id
+      - transaction_id
